@@ -46,6 +46,9 @@
   font-weight: bold;
   display: flex;
 }
+.nav__link:hover {
+  color: #c1c1c1;
+}
 
 .header__title {
   max-width: 544px;
@@ -85,6 +88,9 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+.header_link:hover {
+  color: #c1c1c1;
 }
 
 .header__address {
@@ -165,6 +171,9 @@
 .events__more {
   color: #2f80ed;
   text-decoration: none;
+}
+.events__more:hover {
+  color: #c1c1c1;
 }
 
 .events__cover {
@@ -468,6 +477,6 @@
   margin-right: 10px;
 }
 
-.footer__column-copyright {
+.footer__copyright {
   margin-top: 108px;
 }
