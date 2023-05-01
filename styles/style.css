@@ -1,11 +1,10 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
   font-family: "Arial";
   font-size: 16px;
   line-height: 20px;
-  display: flex;
+
   margin: auto;
   flex-direction: column;
 }
@@ -20,8 +19,6 @@
 }
 
 .nav {
-  height: 60px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -44,7 +41,6 @@
   color: #000000;
   text-decoration: none;
   font-weight: bold;
-  display: flex;
 }
 .nav__link:hover {
   color: #1f69c9;
@@ -56,6 +52,7 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .header__description {
@@ -63,13 +60,14 @@
   max-width: 532px;
   font-size: 20px;
   line-height: 30px;
+  margin-top: 0;
 }
 
 .header__image {
   z-index: 1;
   position: absolute;
   max-width: 636px;
-  top: 153px;
+  top: 135px;
   right: 20px;
 }
 
@@ -244,11 +242,10 @@
   margin: 0;
 }
 .staff__background-image {
-  display: flex;
   z-index: 1;
   min-width: 1100px;
   max-width: 1600px;
-  height: fit-content;
+
   position: absolute;
   z-index: -1;
   height: 1000px;
@@ -281,9 +278,10 @@
 .staff__cards {
   max-width: 760px;
   gap: 40px;
-  padding-left: 0%;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .card {
   background-color: #fff;
@@ -292,14 +290,15 @@
   box-sizing: border-box;
   width: 360px;
   height: 420px;
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
 }
 
 .card__content {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 .card__title {
@@ -346,12 +345,11 @@
   margin: 100px 0 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  gap: 40px;
 }
 
 .step {
-  max-width: 220px;
-  margin-right: 40px;
+  flex-basis: auto;
 }
 
 .step__title {
@@ -380,7 +378,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  position: relative;
 }
 
 .about__title {
@@ -388,7 +385,6 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
   max-width: 154px;
   align-self: stretch;
   margin-right: 120px;
@@ -406,7 +402,9 @@
 .about__paragraph {
   margin: 0 0 32px;
 }
-
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
@@ -480,4 +478,5 @@
 
 .footer__copyright {
   margin-top: 108px;
+  margin-bottom: 0;
 }
